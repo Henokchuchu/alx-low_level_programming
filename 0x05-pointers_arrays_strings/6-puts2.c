@@ -26,4 +26,3 @@ _putchar(str[o]);
 }
 _putchar('\n');
 }
-}
