@@ -4,6 +4,7 @@ int main(void)
 int n;
 int a[5];
 int *p;
+b[2] = 98
 a[2] = 1024;
 p = &n;
 /*
