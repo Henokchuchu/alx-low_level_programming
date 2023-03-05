@@ -1,3 +1,6 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
@@ -9,15 +12,5 @@ void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
 void print_number(int n);
-#include "main.h"
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    print_most_numbers();
-    return (0);
-}
+#endif
