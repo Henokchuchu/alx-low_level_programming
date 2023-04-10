@@ -23,15 +23,15 @@ return (buffer);
 }
 /**
 * close_file - Closes file descriptors.
-* @ab: The file descriptor to be closed.
+* @fd: The file descriptor to be closed.
 */
-void close_file(int ab)
+void close_file(int fd)
 {
 int c;
-c = close(ab);
+c = close(fd);
 if (c == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close ab %d\n", ab);
+dprintf(STDERR_FILENO, "Error: Can't close ab %d\n", fd);
 exit(100);
 }
 }
