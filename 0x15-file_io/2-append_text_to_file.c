@@ -9,17 +9,17 @@
 *         If the file does not exist the user lacks write permissions - -1.
 *         Otherwise - 1.
 */
-int append_text_to_file(const char *henok, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 int q, t, len = 0;
-if (henok == NULL)
+if (filename == NULL)
 return (-1);
 if (text_content != NULL)
 {
 for (len = 0; text_content[len];)
 len++;
 }
-q = open(henok, O_WRONLY | O_APPEND);
+q = open(filename, O_WRONLY | O_APPEND);
 t = write(q, text_content, len);
 if (q == -1 || t == -1)
 return (-1);
