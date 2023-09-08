@@ -1,0 +1,5 @@
+CC = gcc
+SRC = main.c makefile.c
+
+all:
+	${CC} ${SRC} -o makefile

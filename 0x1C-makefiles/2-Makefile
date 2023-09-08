@@ -1,0 +1,7 @@
+CC = gcc
+SRC = main.c hewan.c
+OBJ = ${SRC:.c=.o}
+NAME = Hewan
+
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}

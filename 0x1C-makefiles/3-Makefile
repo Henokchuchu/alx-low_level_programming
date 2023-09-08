@@ -1,0 +1,20 @@
+CC = gcc
+SRC = main.c henok.c
+OBJ = ${SRC:.c=.o}
+NAME = henok
+RM = rm
+
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
+
+clean:
+	${RM} -f *~ ${NAME}
+
+oclean:
+	${RM} -f ${OBJ}
+
+fclean: clean oclean
+
+re: oclean all
+
+.PHONY: clean oclean fclean re
