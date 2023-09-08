@@ -1,2 +1,2 @@
 all:
-	gcc main.c 0-Makefile.c m.h -o 0-Makefile
+	gcc main.c holberton.c m.h -o holberton
